@@ -15,7 +15,7 @@ class NoteItem extends StatelessWidget {
         }));
       },
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 8),
+        padding: const EdgeInsets.symmetric(vertical: 8),
         child: Container(
           decoration: BoxDecoration(
               color: Color(note.color),
@@ -28,10 +28,10 @@ class NoteItem extends StatelessWidget {
                 ListTile(
                     title: Text(
                       note.title,
-                      style: TextStyle(color: Colors.black, fontSize: 26),
+                      style: const TextStyle(color: Colors.black, fontSize: 26),
                     ),
                     subtitle: Padding(
-                      padding: EdgeInsets.only(top: 16, bottom: 16),
+                      padding: const EdgeInsets.only(top: 16, bottom: 16),
                       child: Text(note.content,
                           style: TextStyle(
                             color: Colors.black.withOpacity(0.4),
@@ -44,7 +44,9 @@ class NoteItem extends StatelessWidget {
                         color: Colors.black,
                         size: 24,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        note.delete();
+                      },
                     )),
                 Padding(
                   padding: const EdgeInsets.only(right: 24),
