@@ -4,7 +4,6 @@ import 'package:noteapp/constants.dart';
 import 'package:noteapp/cubits/notes_cubit/notes_cubit.dart';
 import 'package:noteapp/models/note_model.dart';
 import 'package:noteapp/widgets/color_item.dart';
-import 'package:noteapp/widgets/color_list_view.dart';
 import 'package:noteapp/widgets/custom_app_bar.dart';
 import 'package:noteapp/widgets/custom_text_field.dart';
 
